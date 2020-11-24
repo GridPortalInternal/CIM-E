@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CIME.Core;
 using CIME.GEIRINA;
 
-namespace CIME.Core
+namespace CIME.Wires
 {
-    public class VoltageLevel : EquipmentContainer, IDatabaseIO
+   public class PowerTransformer: Core.ConductingEquipment, IDatabaseIO
     {
-        public double highkV { get; set; }
-
-        public double lowkV { get; set; }
+        public string type { get; set; }
 
         public Substation Substation { get; set; }
 
-        public BaseVoltage BaseVoltage { get; set; }
+        public double NoLoadLoss { get; set; }
 
-        public string Type { get; set; }
+        public double ExcitingCurrent { get; set; }
+
+        public Bay Bay { get; set; }
 
         public void CreateTable(IDatabaseConnection conn)
         {

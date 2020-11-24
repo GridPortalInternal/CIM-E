@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CIME.Core
 {
-    public class Equipment : PowerSystemResource
+    public abstract class Equipment : PowerSystemResourceWithPathname
     {
     }
 }

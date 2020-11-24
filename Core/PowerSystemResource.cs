@@ -4,7 +4,8 @@ using System.Text;
 
 namespace CIME.Core
 {
-    public class PowerSystemResource : IdentifiedObject
+    public abstract class PowerSystemResource : IdentifiedObject
     {
+        public int region_id { get; set; }
     }
 }
