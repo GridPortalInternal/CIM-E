@@ -1,10 +1,11 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.CompilerServices;
 using CIME.Core;
-using CIME.GEIRINA;
 
 namespace CIME.Wires
 {
-    public class ACLineSegment : Conductor, IDatabaseIO
+    [Table("ACLineSegment")]
+    public class ACLineSegment : Conductor
     {
         public string StartSt { get; set; }
 
@@ -29,15 +30,5 @@ namespace CIME.Wires
         public double b0ch { get; set; }
 
         public double length { get; set; }
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

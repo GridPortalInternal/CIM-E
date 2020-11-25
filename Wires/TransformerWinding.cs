@@ -1,9 +1,10 @@
-﻿using CIME.Core;
-using CIME.GEIRINA;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using CIME.Core;
 
 namespace CIME.Wires
 {
-    public class TransformerWinding : Core.ConductingEquipment, IDatabaseIO
+    [Table("TransformerWinding")]
+    public class TransformerWinding : Core.ConductingEquipment
     {
         public string WindingType { get; set; }
 
@@ -44,15 +45,5 @@ namespace CIME.Wires
         public double D { get; set; }
 
         public Bay Bay { get; set; }
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

@@ -1,9 +1,10 @@
-﻿using CIME.Core;
-using CIME.GEIRINA;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using CIME.Core;
 
 namespace CIME.Wires
 {
-    public class ShuntCompensator : RegulatingCondEq, IDatabaseIO
+    [Table("ShuntCompensator")]
+    public class ShuntCompensator : RegulatingCondEq
     {
         public double nomQ { get; set; }
 
@@ -22,15 +23,5 @@ namespace CIME.Wires
         public Bay Bay { get; set; }
 
         public string Cp_type { get; set; }
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

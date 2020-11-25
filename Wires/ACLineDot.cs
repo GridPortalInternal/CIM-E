@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using CIME.Core;
-using CIME.GEIRINA;
 
 namespace CIME.Wires
 {
     /// <summary>
     /// New Class in CIM/E
     /// </summary>
-    public class ACLineDot : Conductor, IDatabaseIO
+    [Table("ACLineDot")]
+    public class ACLineDot : Conductor
     {
         public ACLineSegment ACLineSegment { get; set; }
 
@@ -28,15 +28,5 @@ namespace CIME.Wires
         public double I { get; set; }
 
         public Bay Bay { get; set; }
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using CIME.GEIRINA;
 
 namespace CIME.Core
 {
-    public class Substation : EquipmentContainer, IDatabaseIO
+    [Table("Substation")]
+    public class Substation : EquipmentContainer
     {
         public double Bv_id { get; set; }
 
@@ -28,15 +28,5 @@ namespace CIME.Core
         public int mUnXf_flag { get; set; }
 
         public BaseVoltage BaseVoltage { get; set; }
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

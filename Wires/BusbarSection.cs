@@ -1,9 +1,10 @@
-﻿using CIME.Core;
-using CIME.GEIRINA;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using CIME.Core;
 
 namespace CIME.Wires
 {
-    public class BusbarSection : Connector, IDatabaseIO
+    [Table("BusbarSection")]
+    public class BusbarSection : Connector
     {
         public string I_node { get; set; }
 
@@ -24,15 +25,5 @@ namespace CIME.Wires
         public double V { get; set; }
 
         public double A { get; set; }
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

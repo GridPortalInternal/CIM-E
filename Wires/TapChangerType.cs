@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using CIME.GEIRINA;
 
 namespace CIME.Wires
 {
     /// <summary>
     /// Replace Enum TapChangerKind in CIM
     /// </summary>
-    public class TapChangerType : Core.IdentifiedObject, IDatabaseIO
+    [Table("TapChangerType")]
+    public class TapChangerType : Core.IdentifiedObject
     {
         public int neutralStep { get; set; }
 
@@ -21,15 +21,5 @@ namespace CIME.Wires
         public double stepVolIncre { get; set; }
 
         public int D { get; set; }
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

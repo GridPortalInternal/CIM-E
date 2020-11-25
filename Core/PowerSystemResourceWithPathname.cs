@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CIME.Core
 {
-    public abstract class PowerSystemResourceWithPathname : PowerSystemResource
+#if TPT
+    [Table("PowerSystemResourceWithPathname")]
+#endif
+    public class PowerSystemResourceWithPathname : PowerSystemResource
     {
         public string pathName { get; set; }
     }

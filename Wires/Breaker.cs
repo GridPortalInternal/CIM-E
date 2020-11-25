@@ -1,9 +1,10 @@
-﻿using CIME.Core;
-using CIME.GEIRINA;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using CIME.Core;
 
 namespace CIME.Wires
 {
-    public class Breaker : ProtectedSwitch, IDatabaseIO
+    [Table("Breaker")]
+    public class Breaker : ProtectedSwitch
     {
         public string type { get; set; }
 
@@ -12,16 +13,5 @@ namespace CIME.Wires
         public string J_node { get; set; }
 
         public double mvarating { get; set; }
-
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

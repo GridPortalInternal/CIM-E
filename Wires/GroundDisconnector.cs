@@ -1,21 +1,12 @@
-﻿using CIME.GEIRINA;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CIME.Wires
 {
-    public class GroundDisconnector : Switch, IDatabaseIO
+    [Table("GroundDisconnector")]
+    public class GroundDisconnector : Switch
     {
         public string type { get; set; }
 
         public string I_node { get; set; }
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

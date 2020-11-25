@@ -1,7 +1,14 @@
-﻿namespace CIME.Core
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CIME.Core
 {
-    public abstract class IdentifiedObject
+#if TPT
+    [Table("IdentifiedObject")]
+#endif
+    public class IdentifiedObject
     {
+        [Key]
         public string mRID { get; set; }
 
         public string name { get; set; }

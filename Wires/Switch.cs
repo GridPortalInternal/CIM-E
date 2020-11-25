@@ -1,7 +1,11 @@
-﻿using CIME.Core;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using CIME.Core;
 
 namespace CIME.Wires
 {
+#if TPT
+    [Table("Switch")]
+#endif
     public class Switch : Core.ConductingEquipment
     {
         public Substation Substation { get; set; }

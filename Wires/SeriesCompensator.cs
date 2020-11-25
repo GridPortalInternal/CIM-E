@@ -1,9 +1,10 @@
-﻿using CIME.Core;
-using CIME.GEIRINA;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using CIME.Core;
 
 namespace CIME.Wires
 {
-    public class SeriesCompensator: Core.ConductingEquipment, IDatabaseIO
+    [Table("SeriesCompensator")]
+    public class SeriesCompensator: Core.ConductingEquipment
     {
         public double r { get; set; }
 
@@ -30,15 +31,5 @@ namespace CIME.Wires
         public Bay Bay { get; set; }
 
         public string Cp_type { get; set; }
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

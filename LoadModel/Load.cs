@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using CIME.Core;
-using CIME.GEIRINA;
 
 namespace CIME.LoadModel
 {
-    public class Load : ConformLoad, IDatabaseIO
+    [Table("Load")]
+    public class Load : ConformLoad
     {
         public Substation Substation { get; set; }
 
@@ -23,15 +23,5 @@ namespace CIME.LoadModel
         public Bay Bay { get; set; }
 
         public double inom { get; set; }
-
-        public void CreateTable(IDatabaseConnection conn)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void InsertInto(IDatabaseConnection conn)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
