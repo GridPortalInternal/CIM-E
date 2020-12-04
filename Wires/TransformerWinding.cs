@@ -3,7 +3,7 @@ using CIME.Core;
 
 namespace CIME.Wires
 {
-    [Table("TransformerWinding")]
+//    [Table("TransformerWinding")]
     public class TransformerWinding : Core.ConductingEquipment
     {
         public string WindingType { get; set; }

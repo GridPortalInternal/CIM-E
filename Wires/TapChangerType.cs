@@ -7,7 +7,7 @@ namespace CIME.Wires
     /// <summary>
     /// Replace Enum TapChangerKind in CIM
     /// </summary>
-    [Table("TapChangerType")]
+//    [Table("TapChangerType")]
     public class TapChangerType : Core.IdentifiedObject
     {
         public int neutralStep { get; set; }

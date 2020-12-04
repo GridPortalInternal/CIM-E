@@ -2,7 +2,7 @@
 
 namespace CIME.Wires
 {
-    [Table("Disconnector")]
+//    [Table("Disconnector")]
     public class Disconnector : Switch
     {
         public string I_node { get; set; }

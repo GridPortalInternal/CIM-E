@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CIME.Core
 {
-    [Table("Substation")]
+//    [Table("Substation")]
     public class Substation : EquipmentContainer
     {
         public double Bv_id { get; set; }

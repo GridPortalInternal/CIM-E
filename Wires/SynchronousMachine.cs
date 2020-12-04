@@ -3,7 +3,7 @@ using CIME.Core;
 
 namespace CIME.Wires
 {
-    [Table("SynchronousMachine")]
+//    [Table("SynchronousMachine")]
     public class SynchronousMachine : RegulatingCondEq
     {
         public string Type { get; set; }

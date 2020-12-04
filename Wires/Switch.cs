@@ -4,7 +4,7 @@ using CIME.Core;
 namespace CIME.Wires
 {
 #if TPT
-    [Table("Switch")]
+//    [Table("Switch")]
 #endif
     public class Switch : Core.ConductingEquipment
     {

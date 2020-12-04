@@ -3,7 +3,7 @@ using CIME.Core;
 
 namespace CIME.Wires
 {
-    [Table("ShuntCompensator")]
+//    [Table("ShuntCompensator")]
     public class ShuntCompensator : RegulatingCondEq
     {
         public double nomQ { get; set; }

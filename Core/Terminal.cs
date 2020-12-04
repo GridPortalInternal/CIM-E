@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CIME.Core
 {
-    [Table("Terminal")]
+//    [Table("Terminal")]
     public class Terminal : IdentifiedObject
     {
     }

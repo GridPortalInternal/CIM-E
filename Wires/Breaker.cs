@@ -3,7 +3,7 @@ using CIME.Core;
 
 namespace CIME.Wires
 {
-    [Table("Breaker")]
+//    [Table("Breaker")]
     public class Breaker : ProtectedSwitch
     {
         public string type { get; set; }

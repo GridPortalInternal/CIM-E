@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CIME.Core
 {
-    [Table("VoltageLevel")]
+//    [Table("VoltageLevel")]
     public class VoltageLevel : EquipmentContainer
     {
         public double highkV { get; set; }

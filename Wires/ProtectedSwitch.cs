@@ -3,7 +3,7 @@
 namespace CIME.Wires
 {
 #if TPT
-    [Table("ProtectedSwitch")]
+//    [Table("ProtectedSwitch")]
 #endif
     public class ProtectedSwitch : Switch
     {

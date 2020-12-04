@@ -4,7 +4,7 @@ using CIME.Core;
 
 namespace CIME.Wires
 {
-    [Table("ACLineSegment")]
+//    [Table("ACLineSegment")]
     public class ACLineSegment : Conductor
     {
         public string StartSt { get; set; }

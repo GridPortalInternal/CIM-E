@@ -5,7 +5,7 @@ using CIME.GEIRINA;
 
 namespace CIME.Core
 {
-    [Table("BaseVoltage")]
+//    [Table("BaseVoltage")]
     public class BaseVoltage : IdentifiedObject
     {
         public double nomkV { get; set; }

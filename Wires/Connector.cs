@@ -3,7 +3,7 @@
 namespace CIME.Wires
 {
 #if TPT
-    [Table("Connector")]
+//    [Table("Connector")]
 #endif
     public class Connector : Core.ConductingEquipment
     {

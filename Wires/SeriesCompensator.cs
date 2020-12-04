@@ -3,7 +3,7 @@ using CIME.Core;
 
 namespace CIME.Wires
 {
-    [Table("SeriesCompensator")]
+//    [Table("SeriesCompensator")]
     public class SeriesCompensator: Core.ConductingEquipment
     {
         public double r { get; set; }

@@ -6,7 +6,7 @@ using System.Text;
 namespace CIME.Core
 {
 #if TPT
-    [Table("ConnectivityNodeContainer")]
+//    [Table("ConnectivityNodeContainer")]
 #endif
     public class ConnectivityNodeContainer : PowerSystemResourceWithPathname
     {

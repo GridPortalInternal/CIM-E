@@ -5,7 +5,7 @@ using CIME.Core;
 
 namespace CIME.Wires
 {
-    [Table("PowerTransformer")]
+//    [Table("PowerTransformer")]
     public class PowerTransformer: Core.ConductingEquipment
     {
         public string type { get; set; }

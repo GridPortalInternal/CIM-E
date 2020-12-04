@@ -6,7 +6,7 @@ using System.Text;
 namespace CIME.LoadModel
 {
 #if TPT
-    [Table("ConformLoad")]
+//    [Table("ConformLoad")]
 #endif
     public class ConformLoad : Wires.EnergyConsumer
     {

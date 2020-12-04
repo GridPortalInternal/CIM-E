@@ -6,7 +6,7 @@ using System.Text;
 namespace CIME.Core
 {
 #if TPT
-    [Table("EquipmentContainer")]
+//    [Table("EquipmentContainer")]
 #endif
     public class EquipmentContainer : ConnectivityNodeContainer
     {

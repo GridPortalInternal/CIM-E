@@ -2,7 +2,7 @@
 
 namespace CIME.Wires
 {
-    [Table("GroundDisconnector")]
+//    [Table("GroundDisconnector")]
     public class GroundDisconnector : Switch
     {
         public string type { get; set; }

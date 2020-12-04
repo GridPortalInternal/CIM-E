@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CIME.ControlArea
 {
-    [Table("ControlArea")]
+   // [Table("ControlArea")]
     public class ControlArea : Core.PowerSystemResource
     {
         public string Parent { get; set; }

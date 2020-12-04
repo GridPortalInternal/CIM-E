@@ -8,7 +8,7 @@ namespace CIME.Wires
     /// <summary>
     /// New Class in CIM/E
     /// </summary>
-    [Table("ACLineDot")]
+//    [Table("ACLineDot")]
     public class ACLineDot : Conductor
     {
         public ACLineSegment ACLineSegment { get; set; }

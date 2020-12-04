@@ -3,7 +3,7 @@
 namespace CIME.Wires
 {
 #if TPT
-    [Table("RegulatingCondEq")]
+//    [Table("RegulatingCondEq")]
 #endif
     public class RegulatingCondEq : Core.ConductingEquipment
     {

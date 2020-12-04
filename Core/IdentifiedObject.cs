@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CIME.Core
 {
 #if TPT
-    [Table("IdentifiedObject")]
+//    [Table("IdentifiedObject")]
 #endif
     public class IdentifiedObject
     {

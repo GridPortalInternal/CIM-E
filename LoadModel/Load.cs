@@ -5,7 +5,7 @@ using CIME.Core;
 
 namespace CIME.LoadModel
 {
-    [Table("Load")]
+//    [Table("Load")]
     public class Load : ConformLoad
     {
         public Substation Substation { get; set; }

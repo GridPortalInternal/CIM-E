@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CIME.Core
 {
-    [Table("Bay")]
+//    [Table("Bay")]
     public class Bay : EquipmentContainer
     {
         public Substation Substation { get; set; }

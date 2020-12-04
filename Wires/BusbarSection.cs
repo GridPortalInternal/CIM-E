@@ -3,7 +3,7 @@ using CIME.Core;
 
 namespace CIME.Wires
 {
-    [Table("BusbarSection")]
+//    [Table("BusbarSection")]
     public class BusbarSection : Connector
     {
         public string I_node { get; set; }

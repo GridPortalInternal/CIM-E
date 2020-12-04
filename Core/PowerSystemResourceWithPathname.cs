@@ -6,7 +6,7 @@ using System.Text;
 namespace CIME.Core
 {
 #if TPT
-    [Table("PowerSystemResourceWithPathname")]
+//    [Table("PowerSystemResourceWithPathname")]
 #endif
     public class PowerSystemResourceWithPathname : PowerSystemResource
     {

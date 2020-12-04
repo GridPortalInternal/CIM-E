@@ -6,7 +6,7 @@ using System.Text;
 namespace CIME.Core
 {
 #if TPT
-    [Table("ConductingEquipment")]
+//    [Table("ConductingEquipment")]
 #endif
     public class ConductingEquipment : Equipment
     {

@@ -6,7 +6,7 @@ using System.Text;
 namespace CIME.Wires
 {
 #if TPT
-    [Table("EnergyConsumer")]
+//    [Table("EnergyConsumer")]
 #endif
     public class EnergyConsumer : Core.ConductingEquipment
     {
