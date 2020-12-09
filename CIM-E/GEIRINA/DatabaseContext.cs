@@ -82,7 +82,8 @@ namespace CIME.GEIRINA
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source = E:\cim.db;");
+            //            optionsBuilder.UseSqlite(@"Data Source = E:\cim.db;");
+            optionsBuilder.UseNpgsql("Host=localhost;Database=CIME;Username=postgres;Password=mysecretpassword");
         }
     }
 }
